@@ -28,7 +28,6 @@ public class Exemplo1 {
                     System.out.println("Idade: "+idade);
                     break;
                 case "3":
-                    System.out.flush();
                     System.out.println("Volte sempre!");
                     break;
                 default:
