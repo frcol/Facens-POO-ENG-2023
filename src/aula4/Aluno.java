@@ -1,9 +1,9 @@
 package aula4;
 
 public class Aluno {
-    private String ra;
-    private String nome;
-    private String curso;
+    String ra;
+    String nome;
+    String curso;
     
     public String getRa() {
         return ra;
