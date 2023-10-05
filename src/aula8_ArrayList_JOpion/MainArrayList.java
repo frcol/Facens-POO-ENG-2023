@@ -74,6 +74,7 @@ public class MainArrayList {
                     boolean achou2 = false;
                     ra = JOptionPane.showInputDialog("RA:");
                     
+                    // Nao usar FOREACH para remover, causa erro na lista
                     for (int i=0; i < lstAlunos.size(); i++) {
                         if (lstAlunos.get(i).getRa().equals(ra)) {
                             achou2 = true;
