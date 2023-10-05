@@ -1,5 +1,5 @@
 
-package aula8;
+package aula8_ArrayList_JOpion;
 
 public class Aluno {
     private String ra;
