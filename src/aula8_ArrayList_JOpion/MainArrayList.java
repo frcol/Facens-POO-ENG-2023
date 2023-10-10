@@ -29,7 +29,7 @@ public class MainArrayList {
                     break;
                 case "2": // MOSTRAR
                     if (lstAlunos.isEmpty()) {
-                        return;
+                        continue;
                     }
                     
                     String str = "";
@@ -82,7 +82,7 @@ public class MainArrayList {
                             lstAlunos.remove(i);
                         }
                     }
-                    
+                                       
                     if (!achou2) {
                         JOptionPane.showMessageDialog(null, "Aluno nao encontrado");
                     }
