@@ -1,4 +1,4 @@
-package aula9;
+package aula9_relacionamento;
 
 import javax.swing.JOptionPane;
 
