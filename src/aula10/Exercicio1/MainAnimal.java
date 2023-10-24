@@ -1,4 +1,4 @@
-package aula10;
+package aula10.Exercicio1;
 
 import java.util.ArrayList;
 
@@ -19,8 +19,8 @@ public class MainAnimal {
         lstAnimal.add(cap);
         
         for (Animal animal : lstAnimal) {
-            animal.fala();
-        }
-                
+            if (animal instanceof Gato)
+                animal.fala();
+        }       
     }
 }
