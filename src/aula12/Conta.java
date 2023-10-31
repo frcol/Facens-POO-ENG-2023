@@ -1,5 +1,5 @@
 
-package Aula12;
+package aula12;
 
 
 public class Conta {
