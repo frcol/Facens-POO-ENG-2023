@@ -20,5 +20,9 @@ public class Main {
         for (Pessoa pessoa : lstPessoas) {
             System.out.println(pessoa.imprimir());
         }
+        
+        Pessoa p = new Pessoa("FAbio", "23123");
+        Aluno a = (Aluno)p;
+        System.out.println(a.imprimir());
     }
 }

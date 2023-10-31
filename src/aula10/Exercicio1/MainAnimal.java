@@ -18,9 +18,16 @@ public class MainAnimal {
         lstAnimal.add(cat);
         lstAnimal.add(cap);
         
-        for (Animal animal : lstAnimal) {
-            if (animal instanceof Gato)
-                animal.fala();
-        }       
+        //Animal animal = new Animal();   
+        //((Cachorro)animal).getVelocidade(); <--- Erro
+        
+        Animal animal1 = new Gato("Shirlei", 5, 4);
+        ((Gato)animal1).getAlturaSalto();
+        
+        for (Animal ani : lstAnimal) {
+            if (ani instanceof Gato) {
+                ((Gato) ani).getAlturaSalto();
+            }      
+        }      
     }
 }

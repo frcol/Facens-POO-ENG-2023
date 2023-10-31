@@ -2,7 +2,7 @@
 package aula10.Exercicio1;
 
 
-public class Animal {
+public abstract class Animal {
     private String nome;
     private int idade;
 
@@ -36,9 +36,7 @@ public class Animal {
         this.idade = idade;
     }
     
-    public String fala() {
-        return "Animal falando Normalmente...";
-    }
+    public abstract String fala();
     
     public String imprimir() {
         return "\nNome: "+nome
