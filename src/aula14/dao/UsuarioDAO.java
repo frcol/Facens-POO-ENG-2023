@@ -13,7 +13,7 @@ public class UsuarioDAO {
         String sql = "insert into usuario(login,senha) values (?,?)";
 
         try (Connection conn = ConnectionFactory.getConnection(); 
-                PreparedStatement stmt = conn.prepareStatement(sql)) {
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
 
             stmt.setString(1, usuario.getLogin());
             stmt.setString(2, usuario.getSenha());
@@ -25,7 +25,7 @@ public class UsuarioDAO {
     }
 
     public void editar(Usuario usuario) {
-        String sql = "update usuario set login = ?, senha = ? where id_usuario = ?";
+        String sql = "update usuario set login = ?, senha = ? where id = ?";
 
         try (Connection conn = ConnectionFactory.getConnection(); 
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -34,7 +34,6 @@ public class UsuarioDAO {
             stmt.setString(2, usuario.getSenha());
             stmt.setInt(3, usuario.getId_usuario());
             stmt.execute();
-            stmt.close();
         } catch (SQLException ex) {
             System.out.println("Erro ao editar usuário: " + ex.getMessage());
         }
